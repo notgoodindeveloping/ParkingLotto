@@ -46,14 +46,14 @@ public class LoginFrame extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel2.setText("Password:");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(70, 260, 100, 25);
+        jLabel2.setBounds(70, 260, 100, 26);
         getContentPane().add(jTextField1);
         jTextField1.setBounds(200, 140, 360, 40);
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel3.setText("Username:");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(70, 140, 100, 25);
+        jLabel3.setBounds(70, 140, 100, 26);
         getContentPane().add(jPasswordField1);
         jPasswordField1.setBounds(200, 260, 360, 40);
 
