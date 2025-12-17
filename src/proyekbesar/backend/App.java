@@ -9,10 +9,10 @@ public class App {
          
         // LOGIN IMPLEMENTATION
         // INPUT DATA
-        // System.out.print("Masukkan username: ");
-        // String username = input.nextLine();
-        // System.out.print("Masukkan password: ");
-        // String password = input.nextLine();
+         System.out.print("Masukkan username: ");
+         String username = input.nextLine();
+         System.out.print("Masukkan password: ");
+         String password = input.nextLine();
         
         /*
         - Before execute login method, make sure to validate the input first(username, password)
@@ -27,7 +27,8 @@ public class App {
         */
         
         // LOGIC CODE
-        // boolean result = authManager.login(new User(username.trim(), password.trim()));
+         boolean result = authManager.login(new User(username.trim(), password.trim()));
+         System.out.println(result);
         // LOGIN IMPLEMENTATION
   
         // VEHICLE IN IMPLEMENTATION
@@ -46,6 +47,6 @@ public class App {
         - result = "Motor"
         - IF not using trim method, the variables value will be "       Motor     "
         */
-        // authManager.vehicleIn(new Vehicle(licensePlate.trim(), type.trim()));
+         // authManager.vehicleIn(new Vehicle(licensePlate.trim(), type.trim()));
     }
 }

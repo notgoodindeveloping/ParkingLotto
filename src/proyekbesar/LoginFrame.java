@@ -4,12 +4,15 @@
  */
 package proyekbesar;
 
+import proyekbesar.backend.AuthDao;
+import proyekbesar.backend.User;
+
 /**
  *
  * @author yourf
  */
 public class LoginFrame extends javax.swing.JFrame {
-
+    AuthDao authManager = new AuthDao();
     /**
      * Creates new form Login
      */
@@ -46,24 +49,36 @@ public class LoginFrame extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel2.setText("Password:");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(70, 260, 100, 26);
+        jLabel2.setBounds(70, 260, 100, 25);
         getContentPane().add(jTextField1);
         jTextField1.setBounds(200, 140, 360, 40);
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel3.setText("Username:");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(70, 140, 100, 26);
+        jLabel3.setBounds(70, 140, 100, 25);
         getContentPane().add(jPasswordField1);
         jPasswordField1.setBounds(200, 260, 360, 40);
 
         jButton1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jButton1.setText("Login");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton1);
         jButton1.setBounds(269, 357, 130, 50);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        String username = jTextField1.getText();
+        String password = jPasswordField1.getText();
+        boolean result = authManager.login(new User(username.trim(), password.trim()));
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
