@@ -5,14 +5,15 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) {
          AuthDao authManager = new AuthDao();
+         VehicleDao VehManager = new VehicleDao();
          Scanner input = new Scanner(System.in);
          
         // LOGIN IMPLEMENTATION
         // INPUT DATA
-         System.out.print("Masukkan username: ");
-         String username = input.nextLine();
-         System.out.print("Masukkan password: ");
-         String password = input.nextLine();
+//         System.out.print("Masukkan username: ");
+//         String username = input.nextLine();
+//         System.out.print("Masukkan password: ");
+//         String password = input.nextLine();
         
         /*
         - Before execute login method, make sure to validate the input first(username, password)
@@ -27,16 +28,16 @@ public class App {
         */
         
         // LOGIC CODE
-         boolean result = authManager.login(new User(username.trim(), password.trim()));
-         System.out.println(result);
+//        boolean result = authManager.login(new User(username.trim(), password.trim()));
+//        System.out.println(result);
         // LOGIN IMPLEMENTATION
   
         // VEHICLE IN IMPLEMENTATION
         // INPUT DATA
-        // System.out.print("Masukkan license plate: ");
-        // String licensePlate = input.nextLine();
-        // System.out.print("Masukkan tipe kendaraan: ");
-        // String type = input.nextLine();
+//         System.out.print("Masukkan license plate: ");
+//         String licensePlate = input.nextLine();
+//         System.out.print("Masukkan tipe kendaraan: ");
+//         String type = input.nextLine();
         
         // LOGIC CODE
         /*
@@ -47,6 +48,11 @@ public class App {
         - result = "Motor"
         - IF not using trim method, the variables value will be "       Motor     "
         */
-         // authManager.vehicleIn(new Vehicle(licensePlate.trim(), type.trim()));
+//          VehManager.vehicleIn(new Vehicle(licensePlate.trim(), type.trim()));
+          
+        System.out.print("Masukkan license plate: ");
+        String licensePlate = input.nextLine();
+        
+        VehManager.vehicleOut(licensePlate.trim());
     }
 }
