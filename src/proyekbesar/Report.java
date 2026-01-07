@@ -31,9 +31,10 @@ public class Report extends javax.swing.JFrame {
         getContentPane().setLayout(null);
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Laporan Data Parkir");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(310, 40, 214, 33);
+        jLabel1.setBounds(254, 40, 330, 32);
 
         returnBtn.setText("Kembali");
         returnBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -73,7 +74,7 @@ public class Report extends javax.swing.JFrame {
         jScrollPane1.setViewportView(tableData);
 
         getContentPane().add(jScrollPane1);
-        jScrollPane1.setBounds(10, 110, 800, 419);
+        jScrollPane1.setBounds(10, 110, 830, 419);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

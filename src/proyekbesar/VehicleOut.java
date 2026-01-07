@@ -17,8 +17,6 @@ public class VehicleOut extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         plateInput = new javax.swing.JTextField();
-        jComboBox1 = new javax.swing.JComboBox<>();
-        jLabel4 = new javax.swing.JLabel();
         saveBtn = new javax.swing.JButton();
         returnBtn = new javax.swing.JButton();
 
@@ -30,25 +28,15 @@ public class VehicleOut extends javax.swing.JFrame {
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Data Kendaraan Keluar");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(166, 51, 261, 33);
+        jLabel1.setBounds(166, 51, 300, 32);
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("Plat Nomor:");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(84, 118, 103, 26);
+        jLabel2.setBounds(110, 120, 130, 25);
         getContentPane().add(plateInput);
-        plateInput.setBounds(199, 120, 303, 22);
-
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Mobil", "Motor" }));
-        getContentPane().add(jComboBox1);
-        jComboBox1.setBounds(226, 195, 72, 22);
-
-        jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel4.setText("Jenis Kendaraan:");
-        getContentPane().add(jLabel4);
-        jLabel4.setBounds(79, 196, 141, 26);
+        plateInput.setBounds(270, 120, 303, 26);
 
         saveBtn.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         saveBtn.setText("Simpan");
@@ -58,7 +46,7 @@ public class VehicleOut extends javax.swing.JFrame {
             }
         });
         getContentPane().add(saveBtn);
-        saveBtn.setBounds(214, 265, 147, 47);
+        saveBtn.setBounds(110, 180, 147, 47);
 
         returnBtn.setFont(new java.awt.Font("Segoe UI", 0, 20)); // NOI18N
         returnBtn.setText("Kembali");
@@ -68,7 +56,7 @@ public class VehicleOut extends javax.swing.JFrame {
             }
         });
         getContentPane().add(returnBtn);
-        returnBtn.setBounds(207, 330, 160, 51);
+        returnBtn.setBounds(380, 180, 150, 50);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -106,10 +94,8 @@ public class VehicleOut extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JTextField plateInput;
     private javax.swing.JButton returnBtn;
     private javax.swing.JButton saveBtn;
