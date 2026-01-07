@@ -6,6 +6,7 @@ package proyekbesar;
 
 import proyekbesar.backend.AuthDao;
 import proyekbesar.backend.Vehicle;
+import proyekbesar.backend.VehicleDao;
 
 
 
@@ -14,8 +15,9 @@ import proyekbesar.backend.Vehicle;
  * @author yourf
  */
 public class VehicleIn extends javax.swing.JFrame {
-
-        AuthDao authManager = new AuthDao();
+    AuthDao authManager = new AuthDao();
+    VehicleDao vehManager = new VehicleDao();
+    
     /**
      * Creates new form VehicleIn
      */
@@ -129,10 +131,11 @@ public class VehicleIn extends javax.swing.JFrame {
             return;
         }
         
-        authManager.vehicleIn(new Vehicle(license, type));
+        vehManager.vehicleIn(new Vehicle(license, type));
         
         javax.swing.JOptionPane.showMessageDialog(this, "Data berhasil ditambahkan");
-        new Dashboard();
+        new Dashboard().setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_saveActionPerformed
 
     private void returnBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_returnBtnActionPerformed

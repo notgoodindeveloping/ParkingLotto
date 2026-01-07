@@ -29,22 +29,4 @@ public class AuthDao {
             return false;
         }
     }
-    
-    public void vehicleIn(Vehicle vehicle) {
-        final String query = "INSERT INTO vehicles (license_plate, type, fee) VALUES (?, ?, ?)";
-        
-        try(
-            Connection conn = dbConnection.getConnection();
-            PreparedStatement pstmt = conn.prepareStatement(query);
-        ) {
-            pstmt.setString(1, vehicle.getLicensePlate());
-            pstmt.setString(2, vehicle.getType());
-            pstmt.setInt(3, vehicle.getFee());
-            
-            pstmt.executeUpdate();
-        } catch(SQLException e) {
-            System.err.println("❌ Error: " + e.getMessage());
-            e.printStackTrace();
-        }
-    }
 }
