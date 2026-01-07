@@ -47,6 +47,6 @@ public class App {
         - result = "Motor"
         - IF not using trim method, the variables value will be "       Motor     "
         */
-         // authManager.vehicleIn(new Vehicle(licensePlate.trim(), type.trim()));
+         // authManager.vehicleIn(new Vehicle(license.trim(), type.trim()));
     }
 }

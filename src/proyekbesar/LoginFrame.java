@@ -77,7 +77,23 @@ public class LoginFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
         String username = jTextField1.getText();
         String password = jPasswordField1.getText();
+        if (username.isEmpty() || password.isEmpty()) {
+        javax.swing.JOptionPane.showMessageDialog(this, 
+            "Username dan Password tidak boleh kosong!", 
+            "Peringatan", 
+            javax.swing.JOptionPane.WARNING_MESSAGE);
+        return;
+        }
         boolean result = authManager.login(new User(username.trim(), password.trim()));
+
+        if (result) {
+            javax.swing.JOptionPane.showMessageDialog(this, "Login Berhasil!");
+        } else {
+            javax.swing.JOptionPane.showMessageDialog(this, 
+                "Username atau Password salah!", 
+                "Login Gagal", 
+                javax.swing.JOptionPane.ERROR_MESSAGE);
+        }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
