@@ -21,28 +21,29 @@ public class LoginFrame extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(700, 580));
+        setFocusCycleRoot(false);
+        setPreferredSize(new java.awt.Dimension(507, 412));
         getContentPane().setLayout(null);
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Login Sistem Parkir");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(190, 20, 310, 60);
+        jLabel1.setBounds(30, 20, 460, 60);
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel2.setText("Password:");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(70, 260, 100, 26);
+        jLabel2.setBounds(70, 200, 100, 25);
         getContentPane().add(jTextField1);
-        jTextField1.setBounds(200, 140, 360, 40);
+        jTextField1.setBounds(200, 140, 260, 40);
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel3.setText("Username:");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(70, 140, 100, 26);
+        jLabel3.setBounds(70, 140, 100, 25);
         getContentPane().add(jPasswordField1);
-        jPasswordField1.setBounds(200, 260, 360, 40);
+        jPasswordField1.setBounds(200, 200, 260, 40);
 
         jButton1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jButton1.setText("Login");
@@ -52,7 +53,7 @@ public class LoginFrame extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(269, 357, 130, 50);
+        jButton1.setBounds(190, 300, 130, 50);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
