@@ -45,7 +45,7 @@ public class VehicleIn extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Kendaraan Masuk");
 
-        vehType.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Mobil", "Sepeda Motor", " " }));
+        vehType.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Mobil", "Motor", " " }));
 
         save.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         save.setText("Simpan");
